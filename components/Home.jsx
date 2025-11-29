@@ -1,0 +1,34 @@
+import React from 'react';
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ServiceSection from "@/components/ServicesSection";
+import WhoWeAre from "@/components/WhoWeAre";
+import ProductSection from "@/components/ProductSection";
+import SmartHomeCTA from "@/components/SmartHomeCTA";
+import OurValueSection from "@/components/OurValueSection";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import  WhyChooseUs from "@/components/WhyChooseUs";
+import ClientReviews from "@/components/ClientReviews";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen font-sans text-gray-800 bg-white">
+      <Navbar />
+      <Hero />
+      <ServiceSection />
+      <WhoWeAre />
+      <ProductSection />
+      {/* <Products /> */}
+      <SmartHomeCTA />
+      <OurValueSection />
+      <FeaturedProjects />
+      <WhyChooseUs />
+      <ClientReviews />
+     
+      <Footer />
+    </div>
+  );
+}
+
+
