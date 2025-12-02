@@ -334,13 +334,13 @@ export default function FeaturedProjects() {
                 <div className="flex items-center gap-4 mt-6">
                   {/* placeholder brand icons (put your real icons) */}
                   <div className="w-10 h-10 bg-white/10 rounded-md flex items-center justify-center">
-                    <Image src="/philips.png" alt="philips" width={28} height={28} className="object-contain" />
+                    <Image src="/101.png" alt="philips" width={28} height={28} className="object-contain" />
                   </div>
                   <div className="w-10 h-10 bg-white/10 rounded-md flex items-center justify-center">
-                    <Image src="/tuya.png" alt="tuya" width={28} height={28} className="object-contain" />
+                    <Image src="/102.png" alt="tuya" width={28} height={28} className="object-contain" />
                   </div>
                   <div className="w-10 h-10 bg-white/10 rounded-md flex items-center justify-center">
-                    <Image src="/sonoff.png" alt="sonoff" width={28} height={28} className="object-contain" />
+                    <Image src="/103.png" alt="sonoff" width={28} height={28} className="object-contain" />
                   </div>
                 </div>
 
