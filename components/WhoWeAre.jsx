@@ -21,7 +21,7 @@ export default function WhoWeAre() {
         >
           <div className="rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/WHO WE ARE.png"
+              src="/WHO-WE-ARE.png"
               alt="Technoworld"
               width={760}
               height={880}
