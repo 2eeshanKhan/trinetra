@@ -11,21 +11,21 @@ export default function DiscoverBlog() {
       id: 1,
       title: "Future Trends In Smart Home Technology",
       date: "April 30, 2025",
-      image: "/blog1.jpg",
+      image: "/1.png",
       href: "/blog/future-smart-home",
     },
     {
       id: 2,
       title: "5 Mistakes To Avoid When Building Your Smart Home",
       date: "April 30, 2025",
-      image: "/blog2.jpg",
+      image: "/2.png",
       href: "/blog/common-mistakes",
     },
     {
       id: 3,
       title: "Smart Home Security – Best Systems To Protect",
       date: "April 30, 2025",
-      image: "/blog3.jpg",
+      image: "/3.png",
       href: "/blog/best-security",
     },
   ];
@@ -73,7 +73,7 @@ export default function DiscoverBlog() {
               className="relative h-[280px] rounded-3xl overflow-hidden shadow-lg cursor-pointer"
             >
               <Image
-                src="/blog-small.jpg"
+                src="/6.png"
                 alt="Smart kitchen"
                 fill
                 className="object-cover"
@@ -95,7 +95,7 @@ export default function DiscoverBlog() {
               className="relative h-[420px] rounded-3xl overflow-hidden shadow-xl cursor-pointer"
             >
               <Image
-                src="/blog-big.jpg"
+                src="/5.png"
                 alt="Smart home trends"
                 fill
                 className="object-cover"

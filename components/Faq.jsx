@@ -36,7 +36,7 @@ export default function ServiceFaq() {
             className="rounded-3xl overflow-hidden shadow-lg h-[190px]"
           >
             <Image
-              src="/faq-img-1.jpg"
+              src="/1.png"
               alt="support image"
               width={600}
               height={400}
@@ -71,7 +71,7 @@ export default function ServiceFaq() {
             className="relative w-[380px] h-[530px] rounded-3xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/faq-img-2.jpg"
+              src="/2.png"
               alt="video-thumb"
               fill
               className="object-cover"

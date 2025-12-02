@@ -436,12 +436,23 @@ export default function Navbar() {
         </ul>
 
         {/* RIGHT ACTIONS */}
-        <div className="hidden lg:flex items-center gap-6">
+        {/* <div className="hidden lg:flex items-center gap-6">
           <Search className={`${solid ? "text-gray-900" : "text-white"} cursor-pointer`} />
           <button className="px-6 py-2 rounded-full font-semibold border border-[#3592ea] text-[#3592ea] hover:bg-[#3592ea] hover:text-white transition">
-            Get A Quote
+            Know More
           </button>
-        </div>
+        </div> */}
+
+        <button
+  className="px-6 py-2 rounded-full font-semibold 
+  text-white 
+  bg-gradient-to-r from-[#4DAAFF] to-[#1A73E8] 
+  shadow-[0_0_15px_rgba(77,170,255,0.6)]
+  hover:shadow-[0_0_25px_rgba(77,170,255,0.9)]
+  transition-all"
+>
+  Know More
+</button>
 
         {/* MOBILE */}
         <button className="lg:hidden" onClick={() => setMobileOpen(true)}>

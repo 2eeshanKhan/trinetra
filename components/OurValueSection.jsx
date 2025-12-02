@@ -31,10 +31,15 @@ export default function OurValueSection() {
             Experience Unparalleled Service And Cutting-Edge Technology.
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-md">
+          {/* <p className="mt-4 text-gray-600 max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          </p> */}
+          <p className="mt-4 text-gray-600 max-w-md">
+  We provide intelligent smart-home solutions that bring automation,
+  security, and convenience together to create a seamless living
+  experience.
+</p>
         </motion.div>
 
         {/* Cards grid */}
@@ -59,9 +64,10 @@ export default function OurValueSection() {
               <h3 className="text-white text-lg font-semibold">
                 Your Smart Home Needs.
               </h3>
-              <p className="text-gray-200 text-sm mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+             <p className="text-gray-200 text-sm mt-1">
+  Smart automation designed to simplify your lifestyle with seamless control
+  and real-time security.
+</p>
               <a className="text-[#f6b746] text-sm mt-2 inline-block hover:underline">
                 Learn More →
               </a>
@@ -110,9 +116,9 @@ export default function OurValueSection() {
             <div className="flex items-center gap-3">
               {/* Example avatars — replace with your images */}
               <div className="flex -space-x-2">
-                <Image src="/avatar1.jpg" width={32} height={32} className="rounded-full border-2 border-white" alt="user1"/>
-                <Image src="/avatar2.jpg" width={32} height={32} className="rounded-full border-2 border-white" alt="user2"/>
-                <Image src="/avatar3.jpg" width={32} height={32} className="rounded-full border-2 border-white" alt="user3"/>
+                <Image src="/7.png" width={32} height={32} className="rounded-full border-2 border-white" alt="user1"/>
+                <Image src="/8.png" width={32} height={32} className="rounded-full border-2 border-white" alt="user2"/>
+                <Image src="/9.png" width={32} height={32} className="rounded-full border-2 border-white" alt="user3"/>
               </div>
               <span className="text-sm">4.9 Satisfaction Rate</span>
             </div>
@@ -129,7 +135,7 @@ export default function OurValueSection() {
             className="relative overflow-hidden rounded-2xl shadow-lg group sm:col-span-2"
           >
             <Image
-              src="/value-image-2.jpg"
+              src="/6.png"
               alt="Smart Home Living"
               width={800}
               height={400}
