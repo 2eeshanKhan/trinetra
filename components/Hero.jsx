@@ -17,6 +17,7 @@ export default function Hero() {
     <span className="text-xs sm:text-sm font-medium bg-white/20 backdrop-blur-xl px-4 py-2 rounded-full border border-white/30 tracking-wide">
       SMART AUTOMATION SOLUTIONS
     </span>
+    
 
     <h1 className="text-4xl md:text-6xl font-bold mt-6 leading-tight drop-shadow-md">
       Smart Home Automation

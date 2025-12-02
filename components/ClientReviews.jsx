@@ -30,31 +30,21 @@ const testimonials = [
     text: "Installing the smart door lock and security cameras has made our home feel much safer. I can monitor everything right from my phone!",
     name: "Amit Sharma",
     role: "Homeowner",
-    image: "/reviews/user1.jpg",
+    image: "/56.jpeg",
   },
-  {
-    text: "The automation setup is fantastic! Lights, AC, and smart curtains all respond instantly through the app. Highly recommended!",
-    name: "Priya Verma",
-    role: "Interior Designer",
-    image: "/reviews/user2.jpg",
-  },
-  {
-    text: "Their team explained everything clearly and set up my home devices in just a day. Amazing professionalism and support!",
-    name: "James Wilson",
-    role: "Client",
-    image: "/reviews/user3.jpg",
-  },
+ 
+ 
   {
     text: "Now I can control my home appliances even when I’m traveling. Way better than traditional systems!",
     name: "Neha Agarwal",
     role: "Working Professional",
-    image: "/reviews/user4.jpg",
+    image: "/55.jpeg",
   },
   {
     text: "The voice-controlled smart system has made my home futuristic. Setup was quick and smooth. Loved the experience!",
     name: "Rahul Mehta",
     role: "Business Owner",
-    image: "/reviews/user5.jpg",
+    image: "/60.jpeg",
   },
 ];
 
@@ -63,7 +53,7 @@ export default function ClientReviews() {
   const sliderRef = useRef(null);
 
   useEffect(() => {
-    const slider = sliderRef.current;
+    const slider = sliderRef.current;   
     let scrollAmount = 0;
 
     const autoScroll = () => {
