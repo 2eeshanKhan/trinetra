@@ -49,7 +49,7 @@ export default function OurValueSection() {
             className="relative overflow-hidden rounded-2xl shadow-lg group"
           >
             <Image
-              src="/value-image-1.jpg"
+              src="/Smart Home NEEDS.png"
               alt="Smart Home Needs"
               width={500}
               height={350}

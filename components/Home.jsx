@@ -9,6 +9,8 @@ import OurValueSection from "@/components/OurValueSection";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import  WhyChooseUs from "@/components/WhyChooseUs";
 import ClientReviews from "@/components/ClientReviews";
+import Faq from "@/components/Faq";
+import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -24,6 +26,9 @@ export default function Home() {
       <OurValueSection />
       <FeaturedProjects />
       <WhyChooseUs />
+      <Faq />
+      <Blog />
+
       <ClientReviews />
      
       <Footer />

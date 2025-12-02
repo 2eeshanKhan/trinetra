@@ -140,7 +140,7 @@ export default function WhoWeAre() {
         >
           <div className="rounded-3xl overflow-hidden shadow-xl">
             <Image
-              src="/future.jpg"
+              src="/WHO WE ARE.png"
               alt="Technoworld"
               width={760}
               height={880}

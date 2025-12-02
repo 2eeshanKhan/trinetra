@@ -3,7 +3,7 @@ export default function Hero() {
    <section
   className="relative min-h-screen w-full flex items-center justify-start"
   style={{
-    backgroundImage: "url('/bgimage.png')",
+    backgroundImage: "url('/Smart Apartment.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

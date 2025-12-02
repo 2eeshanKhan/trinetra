@@ -311,19 +311,19 @@ const projects = [
   {
     title: "Smart Apartment Launch",
     subtitle: "Home Automation & Security",
-    image: "/project1.jpg",
+    image: "/Smart Apartment.png",
     href: "/projects/smart-apartment",
   },
   {
     title: "Eco-Smart Villa Setup",
     subtitle: "Energy Efficient IoT Home",
-    image: "/project2.jpg",
+    image: "/ECO villa.png",
     href: "/projects/eco-villa",
   },
   {
     title: "Office Automation Hub",
     subtitle: "Enterprise Smart Controls",
-    image: "/project3.jpg",
+    image: "/Office Auto.png",
     href: "/projects/office-hub",
   },
 ];

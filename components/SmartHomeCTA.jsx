@@ -45,7 +45,7 @@ export default function SmartHomeCTA() {
           className="w-full h-auto rounded-xl overflow-hidden shadow-lg"
         >
           <Image
-            src="/44.jpg"
+            src="/Office Auto.png"
             alt="Smart Home Solutions"
             width={700}
             height={500}
