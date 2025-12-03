@@ -66,9 +66,16 @@ export default function ClientReviews() {
             CLIENT REVIEWS
           </span>
 
-          <h2 className="text-5xl font-bold mt-6 leading-tight">
-            Our Clients Say About <br /> Smart Home Services.
-          </h2>
+          <motion.h2
+  initial={{ opacity: 0, x: -120 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: false }} 
+  className="text-5xl font-bold mt-6 leading-tight"
+>
+  Our Clients Say About <br /> Smart Home Services.
+</motion.h2>
+
 
           <p className="mt-6 text-white/60 max-w-lg text-[16px] leading-relaxed">
            Our clients trust us for delivering seamless automation, reliable security, 

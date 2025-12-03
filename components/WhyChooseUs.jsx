@@ -144,10 +144,17 @@ export default function WhyChooseUs() {
           </span>
 
           {/* Title */}
-          <h2 className="text-4xl font-bold text-[#0A0A0A] mt-5 leading-snug">
-            Discover The Benefits Of <br />
-            Choosing Trinetra Smart Homes.
-          </h2>
+         <motion.h2
+  initial={{ opacity: 0, x: -120 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.9, ease: "easeOut" }}
+  viewport={{ once: false }}   // animate again when scrolling
+  className="text-4xl font-bold text-[#0A0A0A] mt-5 leading-snug"
+>
+  Discover The Benefits Of <br />
+  Choosing Trinetra Smart Homes.
+</motion.h2>
+
 
           {/* Short Description */}
           <p className="text-gray-600 mt-5 max-w-xl leading-relaxed">
@@ -157,31 +164,90 @@ export default function WhyChooseUs() {
           </p>
 
           {/* Features */}
-          <div className="grid grid-cols-2 gap-6 mt-10">
-            {/* Feature 1 */}
-            <div>
-              <div className="bg-[#FFF2DB] p-3 rounded-xl w-fit">
-                <FiMonitor className="text-[#E6A837] text-2xl" />
-              </div>
-              <h4 className="font-semibold mt-3">Certified Experts</h4>
-              <p className="text-gray-500 text-sm max-w-[200px]">
-                Our technicians are trained and certified to install advanced
-                smart home systems with precision and long-term reliability.
-              </p>
-            </div>
+         <div className="grid grid-cols-2 gap-6 mt-10">
+  
+  {/* Feature 1 */}
+  <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
+    viewport={{ once: false }}
+    className=""
+  >
+    <motion.div
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+      viewport={{ once: false }}
+      className="bg-[#FFF2DB] p-3 rounded-xl w-fit"
+    >
+      <FiMonitor className="text-[#E6A837] text-2xl" />
+    </motion.div>
 
-            {/* Feature 2 */}
-            <div>
-              <div className="bg-[#FFF2DB] p-3 rounded-xl w-fit">
-                <FiHeadphones className="text-[#E6A837] text-2xl" />
-              </div>
-              <h4 className="font-semibold mt-3">24/7 Dedicated Support</h4>
-              <p className="text-gray-500 text-sm max-w-[200px]">
-                From installation to after-service, our support team is available
-                round-the-clock for troubleshooting and guidance.
-              </p>
-            </div>
-          </div>
+    <motion.h4
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
+      viewport={{ once: false }}
+      className="font-semibold mt-3"
+    >
+      Certified Experts
+    </motion.h4>
+
+    <motion.p
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+      viewport={{ once: false }}
+      className="text-gray-500 text-sm max-w-[200px]"
+    >
+      Our technicians are trained and certified to install advanced smart home
+      systems with precision and long-term reliability.
+    </motion.p>
+  </motion.div>
+
+  {/* Feature 2 */}
+  <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+    viewport={{ once: false }}
+    className=""
+  >
+    <motion.div
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+      viewport={{ once: false }}
+      className="bg-[#FFF2DB] p-3 rounded-xl w-fit"
+    >
+      <FiHeadphones className="text-[#E6A837] text-2xl" />
+    </motion.div>
+
+    <motion.h4
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
+      viewport={{ once: false }}
+      className="font-semibold mt-3"
+    >
+      24/7 Dedicated Support
+    </motion.h4>
+
+    <motion.p
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+      viewport={{ once: false }}
+      className="text-gray-500 text-sm max-w-[200px]"
+    >
+      From installation to after-service, our support team is available
+      round-the-clock for troubleshooting and guidance.
+    </motion.p>
+  </motion.div>
+
+</div>
+
 
           {/* Divider */}
           <div className="border-b border-gray-200 my-8"></div>

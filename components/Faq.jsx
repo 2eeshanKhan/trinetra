@@ -95,9 +95,16 @@ export default function ServiceFaq() {
             SERVICE FAQS
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold leading-tight">
-            Asked Questions About Our <br /> Smart Home Solutions.
-          </h2>
+         <motion.h2
+  initial={{ opacity: 0, x: -120 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: false }}
+  className="mt-6 text-4xl font-bold leading-tight"
+>
+  Asked Questions About Our <br /> Smart Home Solutions.
+</motion.h2>
+
 
           <p className="mt-4 text-white/70">
             Here are the most common questions customers ask about installations,

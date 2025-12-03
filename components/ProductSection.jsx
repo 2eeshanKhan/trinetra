@@ -178,10 +178,16 @@ export default function ServicesSection() {
             SMART HOME PRODUCTS
           </span>
 
-          <h2 className="mt-6 text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Discover The Smart Solutions <br />
-            We Bring To Your Home.
-          </h2>
+         <motion.h2
+  initial={{ opacity: 0, x: -120 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: false }}   // plays again on scroll
+  className="mt-6 text-4xl lg:text-5xl font-bold text-white leading-tight"
+>
+  Discover The Smart Solutions <br />
+  We Bring To Your Home.
+</motion.h2>
 
           <p className="text-gray-300 mt-5 max-w-md text-[15px]">
             Explore our advanced smart automation devices that enhance 
