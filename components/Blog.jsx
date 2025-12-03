@@ -41,9 +41,20 @@ export default function DiscoverBlog() {
               DISCOVER BLOG
             </span>
 
-            <h2 className="mt-6 text-4xl md:text-5xl font-bold text-[#0F1B2B] leading-snug max-w-xl">
+            {/* <h2 className="mt-6 text-4xl md:text-5xl font-bold text-[#0F1B2B] leading-snug max-w-xl">
               Stay Informed With The Latest In Smart Home Technology.
-            </h2>
+            </h2> */}
+
+            <motion.h2
+  initial={{ opacity: 0, x: -120 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: false }}
+  className="mt-6 text-4xl md:text-5xl font-bold text-[#0F1B2B] leading-snug max-w-xl"
+>
+  Stay Informed With The Latest In Smart Home Technology.
+</motion.h2>
+
           </div>
 
           {/* Right side small text + button */}
