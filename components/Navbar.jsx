@@ -48,11 +48,33 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
 
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-40 h-14">
-            <Image src="/Trinetralogo.jpeg" alt="Trinetra" fill style={{ objectFit: "contain" }} />
+        {/* <Link href="/" className="flex items-center gap-3">
+          <div className="relative w-40 h-20">
+            <Image src="/llogo.png" alt="Trinetra" fill style={{ objectFit: "contain" }} />
           </div>
-        </Link>
+        </Link> */}
+        {/* <Link href="/" className="flex items-center">
+  <div className="relative w-32 h-12 sm:w-40 sm:h-16 md:w-48 md:h-20">
+    <Image
+      src="/llogo.png"
+      alt="Trinetra"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+</Link> */}
+<Link href="/" className="flex items-center">
+  <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-64 lg:h-28">
+    <Image
+      src="/llogo.png"
+      alt="Trinetra"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+</Link>
 
         {/* DESKTOP MENU */}
         <ul

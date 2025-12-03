@@ -231,16 +231,16 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Contact Us</h3>
 
             <p className="text-white/70 text-sm max-w-xs leading-relaxed">
-              Trinetra Smart Automation Pvt. Ltd. <br />
-              Rajkot,Gujarat — India
+              Trinetra Technoworld Pvt Ltd <br />
+              Plot no 129,3rd lane Darukhana,Mazgaon,Mumbai
             </p>
 
             <div className="mt-4 text-sm space-y-2 text-white/70">
               <p className="flex gap-2 items-center">
-                <Phone size={16} /> +91 98765 43210
+                <Phone size={16} /> +91 91062 55483
               </p>
               <p className="flex gap-2 items-center">
-                <Mail size={16} /> support@trinetra.com
+                <Mail size={16} /> support@trinetratechno.world
               </p>
             </div>
 
@@ -262,7 +262,7 @@ export default function Footer() {
         <div className="w-full h-px bg-white/10 mt-16 mb-6"></div>
 
         <p className="text-center text-white/60 text-xs">
-          © {new Date().getFullYear()} Trinetra Smart Automation — All Rights Reserved.
+          © {new Date().getFullYear()} Trinetra Technoworld Pvt Ltd — All Rights Reserved.
         </p>
       </div>
     </footer>
