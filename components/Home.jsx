@@ -21,17 +21,14 @@ export default function Home() {
       <ServiceSection />
       <WhoWeAre />
       <ProductSection />
-      {/* <Products /> */}
       <SmartHomeCTA />
       <OurValueSection />
       <FeaturedProjects />
       <WhyChooseUs />
       <Faq />
       <Blog />
-
-      <ClientReviews />
-     
-      <Footer />
+     <ClientReviews />
+     <Footer />
     </div>
   );
 }

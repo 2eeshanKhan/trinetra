@@ -3,28 +3,6 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Star } from "lucide-react";
-
-// const testimonials = [
-//   {
-//     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-//     name: "Mr. John Doe",
-//     role: "CLIENTS",
-//     image: "/man.jpg",
-//   },
-//   {
-//     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-//     name: "Mr. John Doe",
-//     role: "CLIENTS",
-//     image: "/man.jpg",
-//   },
-//   {
-//     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-//     name: "Mr. John Doe",
-//     role: "CLIENTS",
-//     image: "/man.jpg",
-//   },
-// ];
-
 const testimonials = [
   {
     text: "Installing the smart door lock and security cameras has made our home feel much safer. I can monitor everything right from my phone!",
@@ -32,9 +10,7 @@ const testimonials = [
     role: "Homeowner",
     image: "/56.jpeg",
   },
- 
- 
-  {
+ {
     text: "Now I can control my home appliances even when I’m traveling. Way better than traditional systems!",
     name: "Neha Agarwal",
     role: "Working Professional",
@@ -95,8 +71,8 @@ export default function ClientReviews() {
           </h2>
 
           <p className="mt-6 text-white/60 max-w-lg text-[16px] leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+           Our clients trust us for delivering seamless automation, reliable security, 
+           and personalized living experiences that enhance daily comfort.
           </p>
 
           <div className="w-24 h-[3px] bg-[#FFC65C] mt-8 rounded-full"></div>
