@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* LOGO (Responsive) */}
         <Link href="/" className="flex items-center">
-          <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-60 lg:h-28">
+          <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-50 lg:h-24">
             <Image
               src="/llogo.png"
               alt="Trinetra"
