@@ -16,14 +16,7 @@ const navItems = [
       { label: "Our Team", href: "/team" },
     ],
   },
-  {
-    label: "Products",
-    // submenu: [
-    //   { label: "Smart System", href: "/services/smart-system" },
-    //   { label: "Smart Security", href: "/services/smart-security" },
-    //   { label: "Smart Control", href: "/services/smart-control" },
-    // ],
-  },
+  { label: "Products", href: "/products" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contactUs" },
 ];
@@ -47,34 +40,18 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
 
-        {/* LOGO */}
-        {/* <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-40 h-20">
-            <Image src="/llogo.png" alt="Trinetra" fill style={{ objectFit: "contain" }} />
+        {/* LOGO (Responsive) */}
+        <Link href="/" className="flex items-center">
+          <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-80 lg:h-40">
+            <Image
+              src="/llogo.png"
+              alt="Trinetra"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-        </Link> */}
-        {/* <Link href="/" className="flex items-center">
-  <div className="relative w-32 h-12 sm:w-40 sm:h-16 md:w-48 md:h-20">
-    <Image
-      src="/llogo.png"
-      alt="Trinetra"
-      fill
-      className="object-contain"
-      priority
-    />
-  </div>
-</Link> */}
-<Link href="/" className="flex items-center">
-  <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-64 lg:h-28">
-    <Image
-      src="/llogo.png"
-      alt="Trinetra"
-      fill
-      className="object-contain"
-      priority
-    />
-  </div>
-</Link>
+        </Link>
 
         {/* DESKTOP MENU */}
         <ul
@@ -109,7 +86,7 @@ export default function Navbar() {
                   }}
                 />
 
-                {/* DROPDOWN MENU */}
+                {/* Dropdown */}
                 {item.submenu && (
                   <AnimatePresence>
                     {isActive && (
@@ -136,31 +113,30 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* RIGHT ACTIONS */}
-        {/* <div className="hidden lg:flex items-center gap-6">
-          <Search className={`${solid ? "text-gray-900" : "text-white"} cursor-pointer`} />
-          <button className="px-6 py-2 rounded-full font-semibold border border-[#3592ea] text-[#3592ea] hover:bg-[#3592ea] hover:text-white transition">
-            Know More
-          </button>
-        </div> */}
+        {/* 🔍 SEARCH ICON WITH ANIMATION */}
+        <motion.div
+          whileHover={{ scale: 1.25 }}
+          whileTap={{ scale: 0.95 }}
+          animate={{
+            boxShadow: [
+              "0 0 0px rgba(53,146,234,0.0)",
+              "0 0 12px rgba(53,146,234,0.6)",
+              "0 0 0px rgba(53,146,234,0.0)",
+            ],
+          }}
+          transition={{ duration: 1.8, repeat: Infinity }}
+          className="hidden lg:flex items-center justify-center cursor-pointer p-3 rounded-full"
+        >
+          <Search
+            size={24}
+            className={`${solid ? "text-gray-900" : "text-white"}`}
+          />
+        </motion.div>
 
-      <button
-  className="hidden lg:block px-6 py-2 rounded-full font-semibold 
-  text-white 
-  bg-gradient-to-r from-[#4DAAFF] to-[#1A73E8] 
-  shadow-[0_0_15px_rgba(77,170,255,0.6)]
-  hover:shadow-[0_0_25px_rgba(77,170,255,0.9)]
-  transition-all"
->
-  Know More
-</button>
-
-
-        {/* MOBILE */}
+        {/* MOBILE MENU BUTTON */}
         <button className="lg:hidden" onClick={() => setMobileOpen(true)}>
           <Menu size={26} className={`${solid ? "text-black" : "text-white"}`} />
         </button>
-
       </div>
 
       {/* MOBILE DRAWER */}
@@ -183,7 +159,9 @@ export default function Navbar() {
             >
               <div className="flex justify-between items-center p-4 border-b">
                 <span className="font-semibold text-gray-800">Menu</span>
-                <button onClick={() => setMobileOpen(false)}><X /></button>
+                <button onClick={() => setMobileOpen(false)}>
+                  <X />
+                </button>
               </div>
 
               <ul className="p-4 space-y-3">
