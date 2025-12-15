@@ -200,7 +200,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3 text-white/70 text-sm">
-              {["Home", "About Us", "Smart Solutions", "Projects", "Contact"].map((item, i) => (
+              {["Home", "About Us", "Projects", "Contact"].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 hover:text-white cursor-pointer transition">
                   <ChevronRight size={14} /> {item}
                 </li>
@@ -213,11 +213,11 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Our Solutions</h3>
             <ul className="space-y-3 text-white/70 text-sm">
               {[
-                "Smart Lighting",
-                "Home Security & CCTV",
-                "Energy Management",
+                "Sensor Hub(Smart)",
+                "Red Smart Remote",
+                "Smoke and gas sensor",
                 "Climate Control",
-                "Voice Controlled Automation"
+                "Smart Lock"
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 hover:text-white cursor-pointer transition">
                   <ChevronRight size={14} /> {item}
@@ -262,7 +262,7 @@ export default function Footer() {
         <div className="w-full h-px bg-white/10 mt-16 mb-6"></div>
 
         <p className="text-center text-white/60 text-xs">
-          © {new Date().getFullYear()} Trinetra Technoworld Pvt Ltd — All Rights Reserved.
+          © {new Date().getFullYear()} Fuerte Developers — All Rights Reserved.
         </p>
       </div>
     </footer>

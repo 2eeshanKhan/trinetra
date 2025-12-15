@@ -11,10 +11,10 @@ const navItems = [
   { label: "Home", href: "/" },
   {
     label: "About Us",
-    submenu: [
-      { label: "About Us", href: "/about" },
-      { label: "Our Team", href: "/team" },
-    ],
+    // submenu: [
+    //   { label: "About Us", href: "/about" },
+     
+    // ],
   },
   { label: "Products", href: "/products" },
   { label: "Blogs", href: "/blogs" },

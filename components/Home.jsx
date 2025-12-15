@@ -23,7 +23,7 @@ export default function Home() {
       <ProductSection />
       <SmartHomeCTA />
       <OurValueSection />
-      <FeaturedProjects />
+     
       <WhyChooseUs />
       <Faq />
       <Blog />

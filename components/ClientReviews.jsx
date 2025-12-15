@@ -424,13 +424,13 @@ export default function ClientReviews() {
               </p>
 
               <div className="flex items-center gap-4 mt-auto">
-                <Image
+                {/* <Image
                   src={item.image}
                   width={55}
                   height={55}
                   alt={item.name}
                   className="rounded-full border-2 border-white"
-                />
+                /> */}
                 <div>
                   <p className="font-semibold text-[18px] text-white">{item.name}</p>
                   <p className="text-sm text-[#FFC65C] tracking-wide">{item.role}</p>

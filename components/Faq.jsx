@@ -77,7 +77,7 @@ export default function ServiceFaq() {
               className="object-cover"
             />
 
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* <div className="absolute inset-0 flex items-center justify-center">
               <motion.div
                 animate={{ scale: [1, 1.12, 1] }}
                 transition={{ repeat: Infinity, duration: 1.6 }}
@@ -85,7 +85,7 @@ export default function ServiceFaq() {
               >
                 <span className="text-[#FFB84D] text-2xl font-semibold">►</span>
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 
