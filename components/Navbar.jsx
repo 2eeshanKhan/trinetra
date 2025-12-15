@@ -11,14 +11,12 @@ const navItems = [
   { label: "Home", href: "/" },
   {
     label: "About Us",
-    // submenu: [
-    //   { label: "About Us", href: "/about" },
-     
-    // ],
+  
+    href: "/about"
   },
   { label: "Products", href: "/products" },
   { label: "Blogs", href: "/blogs" },
-  { label: "Contact Us", href: "/contactUs" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -60,57 +58,63 @@ export default function Navbar() {
         `}
         >
           {navItems.map((item) => {
-            const isActive = activeMenu === item.label;
-            return (
-              <li
-                key={item.label}
-                className="relative cursor-pointer"
-                onMouseEnter={() => setActiveMenu(item.label)}
-                onMouseLeave={() => setActiveMenu(null)}
-              >
-                <div className="flex items-center gap-1 hover:text-[#3592ea]">
-                  {item.label}
-                  {item.submenu && <ChevronDown size={14} />}
-                </div>
+  const isActive = activeMenu === item.label;
 
-                {/* Underline Animation */}
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: isActive ? 1 : 0 }}
-                  transition={{ duration: 0.25 }}
-                  className="absolute -bottom-2 left-0 right-0 h-[3px] mx-auto rounded-lg"
-                  style={{
-                    backgroundColor: "#3592ea",
-                    width: "80%",
-                    transformOrigin: "center",
-                  }}
-                />
+  return (
+    <li
+      key={item.label}
+      className="relative"
+      onMouseEnter={() => setActiveMenu(item.label)}
+      onMouseLeave={() => setActiveMenu(null)}
+    >
+      {/* 🔗 NAVIGATION LINK */}
+      <Link
+        href={item.href}
+        className="flex items-center gap-1 cursor-pointer hover:text-[#3592ea]"
+      >
+        {item.label}
+        {item.submenu && <ChevronDown size={14} />}
+      </Link>
 
-                {/* Dropdown */}
-                {item.submenu && (
-                  <AnimatePresence>
-                    {isActive && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        transition={{ duration: 0.25 }}
-                        className="absolute top-full left-0 mt-4 bg-white min-w-[230px] shadow-lg rounded-md overflow-hidden z-50"
-                      >
-                        {item.submenu.map((sub) => (
-                          <Link key={sub.label} href={sub.href}>
-                            <div className="px-5 py-3 text-sm text-black font-medium hover:bg-[#3592ea] hover:text-white transition-colors">
-                              {sub.label}
-                            </div>
-                          </Link>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                )}
-              </li>
-            );
-          })}
+      {/* UNDERLINE */}
+      <motion.div
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: isActive ? 1 : 0 }}
+        transition={{ duration: 0.25 }}
+        className="absolute -bottom-2 left-0 right-0 h-[3px] mx-auto rounded-lg"
+        style={{
+          backgroundColor: "#3592ea",
+          width: "80%",
+          transformOrigin: "center",
+        }}
+      />
+
+      {/* DROPDOWN */}
+      {item.submenu && (
+        <AnimatePresence>
+          {isActive && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.25 }}
+              className="absolute top-full left-0 mt-4 bg-white min-w-[230px] shadow-lg rounded-md overflow-hidden z-50"
+            >
+              {item.submenu.map((sub) => (
+                <Link key={sub.label} href={sub.href}>
+                  <div className="px-5 py-3 text-sm text-black font-medium hover:bg-[#3592ea] hover:text-white transition-colors">
+                    {sub.label}
+                  </div>
+                </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
+    </li>
+  );
+})}
+
         </ul>
 
         {/* 🔍 SEARCH ICON WITH ANIMATION */}
