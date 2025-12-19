@@ -318,7 +318,7 @@ const testimonials = [
   },
   {
     text: "The voice-controlled smart system has made my home futuristic. Setup was quick and smooth!",
-    name: "Rahul Mehta",
+    name: "Abhishek Tiwari",
     role: "Business Owner",
     image: "/60.jpeg",
   },

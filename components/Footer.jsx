@@ -262,7 +262,8 @@ export default function Footer() {
         <div className="w-full h-px bg-white/10 mt-16 mb-6"></div>
 
         <p className="text-center text-white/60 text-xs">
-          © {new Date().getFullYear()} Fuerte Developers — All Rights Reserved.
+          © {new Date().getFullYear()} Trinetra Technoworld Pvt Ltd - All Rights Reserved | Designed & Developed By : Fuerte Developers
+
         </p>
       </div>
     </footer>

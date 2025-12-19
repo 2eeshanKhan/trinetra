@@ -39,17 +39,18 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
 
         {/* LOGO (Responsive) */}
-        <Link href="/" className="flex items-center">
-          <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-24  lg:h-24">
-            <Image
-              src="/llogo.png"
-              alt="Trinetra"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-        </Link>
+       <Link href="/" className="flex items-center">
+  <div className="relative w-36 h-14 sm:w-48 sm:h-20 md:w-60 md:h-24 lg:w-24 lg:h-24">
+    <Image
+      src={solid ? "/Trinetralogo.jpeg" : "/llogo.png"}
+      alt="Trinetra"
+      fill
+      className="object-contain transition-opacity duration-300"
+      priority
+    />
+  </div>
+</Link>
+
 
         {/* DESKTOP MENU */}
         <ul

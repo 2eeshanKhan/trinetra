@@ -189,11 +189,11 @@ export default function OurValueSection() {
               className="object-cover w-full h-56 group-hover:scale-105 transform duration-500"
             />
 
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+            {/* <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
               <button className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-[#0e172d] hover:scale-110 transition-transform duration-300">
                 ►
               </button>
-            </div>
+            </div> */}
           </motion.div>
 
         </div>
