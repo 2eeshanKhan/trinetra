@@ -87,6 +87,9 @@
 "use client";
 
 import Image from "next/image";
+import OurValueSection from "@/components/OurValueSection";
+import WhoWeAre from "@/components/WhoWeAre";
+import  WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function AboutPage() {
   const coreValues = [
@@ -135,6 +138,9 @@ export default function AboutPage() {
           </h1>
         </div>
       </section>
+      <WhoWeAre />
+      <OurValueSection />
+         <WhyChooseUs />
 
       {/* ======================================================
           2️⃣ INNOVATING + VISION / MISSION
@@ -180,74 +186,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ======================================================
-          3️⃣ CORE VALUES (DARK SECTION)
-      ====================================================== */}
-      <section className="py-24 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-16 items-center">
-          
-          {/* LEFT */}
-          <div>
-            <h3 className="text-3xl font-semibold">
-              Our Core <span className="text-[#38BDF8]">Values</span>
-            </h3>
-            <p className="mt-4 text-gray-300">
-              Where innovation blends seamlessly
-              with comfort in home automation.
-              </p>
+      
 
-            <button className="mt-8 px-6 py-3 bg-white text-black rounded-md font-medium">
-              Contact Us
-            </button>
-          </div>
-
-          {/* RIGHT */}
-          <div className="lg:col-span-2 grid sm:grid-cols-2 md:grid-cols-3 gap-10">
-            {coreValues.map((value, index) => (
-              <div
-                key={index}
-                className="border border-white/15 rounded-xl py-10 text-center"
-              >
-                <div className="mb-4 text-2xl">◎</div>
-                <p className="font-medium">{value}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ======================================================
-          4️⃣ FOUNDERS SECTION
-      ====================================================== */}
-      <section className="py-24 max-w-7xl mx-auto px-6 text-center">
-        <h3 className="text-3xl font-semibold">
-          Meet our <span className="text-[#6bc14a]">Founders</span>
-        </h3>
-        <p className="mt-3 text-gray-600">
-          Driven by purpose and powered by passion.
-        </p>
-
-        <div className="mt-16 grid md:grid-cols-2 gap-16">
-          {founders.map((f, index) => (
-            <div key={index} className="flex gap-8 text-left">
-              <div className="w-48 h-56 relative rounded-xl overflow-hidden border">
-                <Image
-                  src={f.img}
-                  alt={f.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div>
-                <h4 className="text-xl font-semibold">{f.name}</h4>
-                <p className="text-sm text-gray-500">{f.role}</p>
-                <p className="mt-4 text-gray-600">{f.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
     </main>
   );
